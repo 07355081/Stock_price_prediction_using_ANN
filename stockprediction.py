@@ -89,8 +89,3 @@ plt.xlabel('Time')
 plt.ylabel('Google Stock Price')
 plt.legend()
 plt.show()
-
-from keras.models import model_from_json
-json_file = open('model.json','r').read()
-classifier = model_from_json(json_file)
-classifier.load_weights('model.h5')    
